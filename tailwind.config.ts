@@ -14,6 +14,11 @@ export default {
     },
     extend: {
       colors: {
+        // Ocean Breeze Theme
+        deepBlue: "#0A369D",
+        aqua: "#4472CA",
+        seafoam: "#93B5C6",
+
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
