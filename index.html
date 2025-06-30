@@ -3,12 +3,1340 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello world project</title>
+    <title>Premium China Web Hosting Solutions - ARZ Host</title>
+    <meta
+      name="description"
+      content="Experience lightning-fast china web hosting and Hong Kong hosting with 99.9% uptime guarantee. Perfect for businesses targeting Chinese markets."
+    />
+    <meta
+      name="keywords"
+      content="china web hosting, web hosting hong kong, hosting china, virtual server hosting hong kong, email hosting in china"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --deep-blue: #0a369d;
+        --aqua: #4472ca;
+        --seafoam: #93b5c6;
+        --white: #ffffff;
+        --gray-50: #f9fafb;
+        --gray-100: #f3f4f6;
+        --gray-400: #9ca3af;
+        --gray-600: #4b5563;
+        --gray-800: #1f2937;
+        --gray-900: #111827;
+        --green-500: #10b981;
+      }
+
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: var(--white);
+      }
+
+      .container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      /* Header */
+      header {
+        background-color: var(--white);
+        border-bottom: 1px solid var(--seafoam);
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 64px;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--deep-blue);
+        text-decoration: none;
+      }
+
+      .nav-links {
+        display: none;
+        gap: 16px;
+      }
+
+      .nav-links a {
+        color: var(--deep-blue);
+        text-decoration: none;
+        padding: 8px 12px;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 14px;
+        transition: color 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: var(--aqua);
+      }
+
+      @media (min-width: 768px) {
+        .nav-links {
+          display: flex;
+        }
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(
+          to bottom right,
+          var(--deep-blue),
+          var(--aqua)
+        );
+        color: var(--white);
+        padding: 80px 0;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 24px;
+        line-height: 1.1;
+      }
+
+      .hero .highlight {
+        color: var(--seafoam);
+      }
+
+      .hero p {
+        font-size: 20px;
+        margin-bottom: 32px;
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .btn-primary {
+        background-color: var(--white);
+        color: var(--deep-blue);
+        padding: 12px 32px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s;
+        display: inline-block;
+      }
+
+      .btn-primary:hover {
+        background-color: var(--seafoam);
+        color: var(--white);
+      }
+
+      .btn-secondary {
+        border: 2px solid var(--white);
+        color: var(--white);
+        padding: 12px 32px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s;
+        display: inline-block;
+      }
+
+      .btn-secondary:hover {
+        background-color: var(--white);
+        color: var(--deep-blue);
+      }
+
+      @media (min-width: 640px) {
+        .hero h1 {
+          font-size: 48px;
+        }
+        .hero-buttons {
+          flex-direction: row;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .hero h1 {
+          font-size: 60px;
+        }
+        .hero p {
+          font-size: 24px;
+        }
+      }
+
+      /* Sections */
+      .section {
+        padding: 80px 0;
+      }
+
+      .section-gray {
+        background-color: var(--gray-50);
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 64px;
+      }
+
+      .section-header h2 {
+        font-size: 30px;
+        font-weight: 700;
+        color: var(--deep-blue);
+        margin-bottom: 16px;
+      }
+
+      .section-header .highlight {
+        color: var(--aqua);
+      }
+
+      .section-header p {
+        font-size: 18px;
+        color: var(--gray-600);
+        max-width: 672px;
+        margin: 0 auto;
+      }
+
+      @media (min-width: 768px) {
+        .section-header h2 {
+          font-size: 36px;
+        }
+      }
+
+      /* Features Grid */
+      .features-grid {
+        display: grid;
+        gap: 32px;
+        grid-template-columns: 1fr;
+      }
+
+      @media (min-width: 768px) {
+        .features-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      .feature-card {
+        background-color: var(--white);
+        padding: 32px;
+        border-radius: 8px;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .feature-icon {
+        width: 64px;
+        height: 64px;
+        background-color: var(--aqua);
+        color: var(--white);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 16px;
+      }
+
+      .feature-card h3 {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--deep-blue);
+        margin-bottom: 12px;
+      }
+
+      .feature-card p {
+        color: var(--gray-600);
+      }
+
+      /* Benefits Section */
+      .benefits-grid {
+        display: grid;
+        gap: 48px;
+        align-items: center;
+        grid-template-columns: 1fr;
+      }
+
+      @media (min-width: 1024px) {
+        .benefits-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      .benefits-list {
+        list-style: none;
+      }
+
+      .benefits-list li {
+        display: flex;
+        margin-bottom: 16px;
+      }
+
+      .check-icon {
+        color: var(--green-500);
+        margin-right: 12px;
+        margin-top: 4px;
+        flex-shrink: 0;
+      }
+
+      .benefit-content h3 {
+        font-weight: 600;
+        color: var(--deep-blue);
+        margin-bottom: 4px;
+      }
+
+      .benefit-content p {
+        color: var(--gray-600);
+      }
+
+      .video-container {
+        background-color: var(--gray-50);
+        padding: 32px;
+        border-radius: 8px;
+      }
+
+      .video-container h3 {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--deep-blue);
+        margin-bottom: 24px;
+      }
+
+      .video-wrapper {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      /* Pricing */
+      .pricing-grid {
+        display: grid;
+        gap: 32px;
+        grid-template-columns: 1fr;
+      }
+
+      @media (min-width: 768px) {
+        .pricing-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      .pricing-card {
+        background-color: var(--white);
+        border-radius: 8px;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        position: relative;
+      }
+
+      .pricing-card.popular {
+        transform: scale(1.05);
+        border: 2px solid var(--aqua);
+      }
+
+      .popular-badge {
+        background-color: var(--aqua);
+        color: var(--white);
+        text-align: center;
+        padding: 8px;
+        font-weight: 600;
+      }
+
+      .pricing-content {
+        padding: 32px;
+      }
+
+      .pricing-content h3 {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--deep-blue);
+        margin-bottom: 8px;
+      }
+
+      .price {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 24px;
+      }
+
+      .price-amount {
+        font-size: 48px;
+        font-weight: 700;
+        color: var(--deep-blue);
+      }
+
+      .price-period {
+        color: var(--gray-600);
+        margin-left: 4px;
+      }
+
+      .pricing-specs {
+        margin-bottom: 32px;
+      }
+
+      .spec-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+      }
+
+      .spec-label {
+        color: var(--gray-600);
+      }
+
+      .spec-value {
+        font-weight: 600;
+        color: var(--deep-blue);
+      }
+
+      .pricing-features {
+        list-style: none;
+        margin-bottom: 32px;
+      }
+
+      .pricing-features li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+      }
+
+      .pricing-features li::before {
+        content: "✓";
+        color: var(--green-500);
+        font-weight: bold;
+        margin-right: 8px;
+      }
+
+      .pricing-btn {
+        width: 100%;
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        text-align: center;
+        display: block;
+        transition: all 0.3s;
+      }
+
+      .pricing-btn-primary {
+        background-color: var(--aqua);
+        color: var(--white);
+      }
+
+      .pricing-btn-primary:hover {
+        background-color: var(--deep-blue);
+      }
+
+      .pricing-btn-secondary {
+        background-color: var(--deep-blue);
+        color: var(--white);
+      }
+
+      .pricing-btn-secondary:hover {
+        background-color: var(--aqua);
+      }
+
+      /* FAQ */
+      .faq-list {
+        max-width: 1024px;
+        margin: 0 auto;
+      }
+
+      .faq-item {
+        background-color: var(--white);
+        border: 1px solid var(--seafoam);
+        border-radius: 8px;
+        margin-bottom: 16px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+      }
+
+      .faq-question {
+        width: 100%;
+        padding: 24px;
+        text-align: left;
+        background: none;
+        border: none;
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--deep-blue);
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .faq-question:hover {
+        background-color: var(--gray-50);
+      }
+
+      .faq-icon {
+        color: var(--aqua);
+        transition: transform 0.3s;
+      }
+
+      .faq-icon.rotated {
+        transform: rotate(180deg);
+      }
+
+      .faq-answer {
+        padding: 0 24px 24px;
+        color: var(--gray-600);
+        display: none;
+      }
+
+      .faq-answer.open {
+        display: block;
+      }
+
+      /* Contact Section */
+      .contact-section {
+        background-color: var(--deep-blue);
+        color: var(--white);
+      }
+
+      .contact-grid {
+        display: grid;
+        gap: 48px;
+        grid-template-columns: 1fr;
+      }
+
+      @media (min-width: 768px) {
+        .contact-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      .contact-info h2 {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 24px;
+      }
+
+      .contact-info p {
+        font-size: 18px;
+        color: #d1d5db;
+        margin-bottom: 32px;
+      }
+
+      .contact-details div {
+        margin-bottom: 16px;
+      }
+
+      .contact-details h3 {
+        font-weight: 600;
+        color: var(--seafoam);
+        margin-bottom: 8px;
+      }
+
+      .contact-details a {
+        color: var(--white);
+        text-decoration: none;
+      }
+
+      .contact-details a:hover {
+        color: var(--seafoam);
+      }
+
+      .contact-cta {
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(4px);
+        padding: 32px;
+        border-radius: 8px;
+      }
+
+      .contact-cta h3 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 24px;
+      }
+
+      .contact-cta p {
+        color: #d1d5db;
+        margin-bottom: 24px;
+      }
+
+      .cta-btn {
+        background-color: var(--seafoam);
+        color: var(--deep-blue);
+        padding: 12px 32px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s;
+        display: inline-block;
+      }
+
+      .cta-btn:hover {
+        background-color: var(--white);
+      }
+
+      /* Footer */
+      footer {
+        background-color: var(--gray-900);
+        color: var(--white);
+        padding: 48px 0;
+      }
+
+      .footer-grid {
+        display: grid;
+        gap: 32px;
+        grid-template-columns: 1fr;
+        margin-bottom: 32px;
+      }
+
+      @media (min-width: 768px) {
+        .footer-grid {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+
+      .footer-section h3 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 16px;
+      }
+
+      .footer-section h4 {
+        font-weight: 600;
+        margin-bottom: 16px;
+      }
+
+      .footer-section p {
+        color: var(--gray-400);
+      }
+
+      .footer-links {
+        list-style: none;
+      }
+
+      .footer-links li {
+        margin-bottom: 8px;
+      }
+
+      .footer-links a {
+        color: var(--gray-400);
+        text-decoration: none;
+      }
+
+      .footer-links a:hover {
+        color: var(--white);
+      }
+
+      .footer-bottom {
+        border-top: 1px solid var(--gray-800);
+        padding-top: 32px;
+        text-align: center;
+        color: var(--gray-400);
+      }
+
+      /* Utilities */
+      .text-center {
+        text-align: center;
+      }
+
+      .mb-2 {
+        margin-bottom: 8px;
+      }
+
+      .mb-4 {
+        margin-bottom: 16px;
+      }
+
+      .mb-6 {
+        margin-bottom: 24px;
+      }
+
+      .mb-8 {
+        margin-bottom: 32px;
+      }
+
+      strong {
+        font-weight: 700;
+      }
+
+      @media (min-width: 768px) {
+        .contact-info h2 {
+          font-size: 36px;
+        }
+      }
+    </style>
   </head>
-
   <body>
-    <div id="root"></div>
+    <!-- Header -->
+    <header>
+      <nav class="container">
+        <a href="https://arzhost.com/" class="logo">ARZ Host</a>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="https://www.arzhost.com/about-us/">About Us</a>
+          <a href="https://www.arzhost.com/contact-us/">Contact Us</a>
+          <a href="https://www.arzhost.com/terms-conditions/">Terms</a>
+          <a href="https://www.arzhost.com/privacy-policy/">Privacy</a>
+        </div>
+      </nav>
+    </header>
 
-    <script type="module" src="/client/main.tsx"></script>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>
+          Premium <span class="highlight">China Web Hosting</span> Solutions
+        </h1>
+        <p>
+          Experience lightning-fast <strong>web hosting in China</strong> and
+          Hong Kong with 99.9% uptime guarantee. Perfect for businesses
+          targeting Chinese markets.
+        </p>
+        <div class="hero-buttons">
+          <a
+            href="https://arzhost.com/hosting/china-based-web-server-hosting/"
+            class="btn-primary"
+            >Get Started Today</a
+          >
+          <a href="https://arzhost.com/" class="btn-secondary"
+            >View Our Hosting Services</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section section-gray">
+      <div class="container">
+        <div class="section-header">
+          <h2>
+            Why Choose Our
+            <span class="highlight">Hosting China</span> Services?
+          </h2>
+          <p>
+            Our <strong>virtual server hosting Hong Kong</strong> and China
+            solutions are designed for maximum performance and reliability.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polygon
+                  points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"
+                ></polygon>
+              </svg>
+            </div>
+            <h3>Lightning Fast Speed</h3>
+            <p>
+              Experience blazing fast loading times with our optimized
+              <strong>web hosting Hong Kong</strong> infrastructure and CDN
+              integration.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3>Enterprise Security</h3>
+            <p>
+              Advanced security features including SSL certificates, DDoS
+              protection, and regular security updates for your peace of mind.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3>24/7 Expert Support</h3>
+            <p>
+              Our dedicated team provides round-the-clock support for all your
+              <strong>email hosting in China</strong> and server needs.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path
+                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                ></path>
+              </svg>
+            </div>
+            <h3>Global Reach</h3>
+            <p>
+              Strategic data center locations in China and Hong Kong ensure
+              optimal performance for your target audience.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3>Scalable Infrastructure</h3>
+            <p>
+              Easily scale your resources as your business grows with our
+              flexible hosting solutions and upgrade options.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12,6 12,12 16,14"></polyline>
+              </svg>
+            </div>
+            <h3>99.9% Uptime</h3>
+            <p>
+              Guaranteed uptime with redundant systems and proactive monitoring
+              to keep your website always accessible.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section">
+      <div class="container">
+        <div class="benefits-grid">
+          <div>
+            <h2 class="mb-6">
+              Unlock the Power of
+              <span class="highlight">China Web Hosting</span>
+            </h2>
+            <p class="mb-8">
+              "Choosing the right hosting provider can make or break your online
+              presence in the Chinese market. Our specialized
+              <strong>china web hosting</strong> solutions ensure your website
+              performs optimally for Chinese users."
+            </p>
+
+            <ul class="benefits-list">
+              <li>
+                <span class="check-icon">✓</span>
+                <div class="benefit-content">
+                  <h3>Improved SEO Rankings</h3>
+                  <p>
+                    Better visibility on
+                    <a
+                      href="https://en.wikipedia.org/wiki/Baidu"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style="color: var(--aqua); text-decoration: underline"
+                      >Baidu</a
+                    >
+                    and other Chinese search engines with local hosting.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <div class="benefit-content">
+                  <h3>Faster Loading Times</h3>
+                  <p>
+                    Reduced latency for Chinese visitors with servers located in
+                    strategic Asian locations.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <div class="benefit-content">
+                  <h3>Compliance Ready</h3>
+                  <p>
+                    Meet local regulations and requirements for operating
+                    websites in the Chinese market.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <div class="benefit-content">
+                  <h3>Enhanced User Experience</h3>
+                  <p>
+                    Provide seamless browsing experience with minimal downtime
+                    and optimal performance.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="video-container">
+            <h3>Watch: Web Hosting in China Explained</h3>
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/6hH8vbEUEUk"
+                title="Web Hosting in China - Complete Guide"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section section-gray">
+      <div class="container">
+        <div class="section-header">
+          <h2>
+            Choose Your Perfect <span class="highlight">Hosting Plan</span>
+          </h2>
+          <p>
+            Flexible and affordable pricing for every business size. All plans
+            include our premium features and 24/7 support.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <div class="pricing-content">
+              <h3>Starter</h3>
+              <div class="price">
+                <span class="price-amount">$9.99</span>
+                <span class="price-period">/month</span>
+              </div>
+
+              <div class="pricing-specs">
+                <div class="spec-row">
+                  <span class="spec-label">RAM:</span>
+                  <span class="spec-value">2 GB</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Storage:</span>
+                  <span class="spec-value">50 GB SSD</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Bandwidth:</span>
+                  <span class="spec-value">1 TB</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">CPU Cores:</span>
+                  <span class="spec-value">1 vCPU</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Location:</span>
+                  <span class="spec-value">Hong Kong</span>
+                </div>
+              </div>
+
+              <ul class="pricing-features">
+                <li>Free SSL Certificate</li>
+                <li>Daily Backups</li>
+                <li>24/7 Support</li>
+              </ul>
+
+              <a
+                href="https://arzhost.com/hosting/"
+                class="pricing-btn pricing-btn-secondary"
+                >Choose Plan</a
+              >
+            </div>
+          </div>
+
+          <div class="pricing-card popular">
+            <div class="popular-badge">Most Popular</div>
+            <div class="pricing-content">
+              <h3>Professional</h3>
+              <div class="price">
+                <span class="price-amount">$19.99</span>
+                <span class="price-period">/month</span>
+              </div>
+
+              <div class="pricing-specs">
+                <div class="spec-row">
+                  <span class="spec-label">RAM:</span>
+                  <span class="spec-value">4 GB</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Storage:</span>
+                  <span class="spec-value">100 GB SSD</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Bandwidth:</span>
+                  <span class="spec-value">2 TB</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">CPU Cores:</span>
+                  <span class="spec-value">2 vCPU</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Location:</span>
+                  <span class="spec-value">China/Hong Kong</span>
+                </div>
+              </div>
+
+              <ul class="pricing-features">
+                <li>Free SSL Certificate</li>
+                <li>Daily Backups</li>
+                <li>24/7 Support</li>
+                <li>CDN Included</li>
+              </ul>
+
+              <a
+                href="https://arzhost.com/hosting/"
+                class="pricing-btn pricing-btn-primary"
+                >Choose Plan</a
+              >
+            </div>
+          </div>
+
+          <div class="pricing-card">
+            <div class="pricing-content">
+              <h3>Enterprise</h3>
+              <div class="price">
+                <span class="price-amount">$39.99</span>
+                <span class="price-period">/month</span>
+              </div>
+
+              <div class="pricing-specs">
+                <div class="spec-row">
+                  <span class="spec-label">RAM:</span>
+                  <span class="spec-value">8 GB</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Storage:</span>
+                  <span class="spec-value">200 GB SSD</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Bandwidth:</span>
+                  <span class="spec-value">5 TB</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">CPU Cores:</span>
+                  <span class="spec-value">4 vCPU</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Location:</span>
+                  <span class="spec-value">China/Hong Kong</span>
+                </div>
+              </div>
+
+              <ul class="pricing-features">
+                <li>Free SSL Certificate</li>
+                <li>Daily Backups</li>
+                <li>24/7 Support</li>
+                <li>CDN Included</li>
+                <li>Priority Support</li>
+              </ul>
+
+              <a
+                href="https://arzhost.com/hosting/"
+                class="pricing-btn pricing-btn-secondary"
+                >Choose Plan</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>
+            Everything you need to know about our China web hosting services
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(0)">
+              What is China web hosting and why do I need it?
+              <span class="faq-icon" id="icon-0">▼</span>
+            </button>
+            <div class="faq-answer" id="answer-0">
+              China web hosting refers to web hosting services located within
+              mainland China or Hong Kong. It's essential for websites targeting
+              Chinese audiences as it provides faster loading speeds, better SEO
+              rankings in Chinese search engines like Baidu, and compliance with
+              local regulations.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(1)">
+              What's the difference between web hosting Hong Kong and hosting
+              China?
+              <span class="faq-icon" id="icon-1">▼</span>
+            </button>
+            <div class="faq-answer" id="answer-1">
+              Web hosting Hong Kong typically offers easier setup without
+              requiring ICP licensing, while hosting China provides the fastest
+              speeds for mainland Chinese users but requires ICP registration.
+              Hong Kong hosting is often preferred for international businesses
+              targeting Chinese markets.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(2)">
+              Do I need special licensing for virtual server hosting Hong Kong?
+              <span class="faq-icon" id="icon-2">▼</span>
+            </button>
+            <div class="faq-answer" id="answer-2">
+              Virtual server hosting Hong Kong generally doesn't require ICP
+              licensing, making it more accessible for international businesses.
+              However, if you plan to target mainland China specifically, you
+              may need to consider compliance requirements.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(3)">
+              How does email hosting in China work?
+              <span class="faq-icon" id="icon-3">▼</span>
+            </button>
+            <div class="faq-answer" id="answer-3">
+              Email hosting in China involves hosting your email servers within
+              Chinese data centers, ensuring faster email delivery and better
+              compliance with local regulations. This is crucial for businesses
+              operating in China or communicating frequently with Chinese
+              partners.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(4)">
+              What are the benefits of choosing ARZ Host for China hosting?
+              <span class="faq-icon" id="icon-4">▼</span>
+            </button>
+            <div class="faq-answer" id="answer-4">
+              ARZ Host provides reliable China-based hosting solutions with
+              99.9% uptime, 24/7 support, and competitive pricing. Our hosting
+              plans are optimized for both Chinese and international audiences,
+              offering the best of both worlds.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2>Ready to Get Started?</h2>
+            <p>
+              Join thousands of satisfied customers who trust
+              <a
+                href="https://arzhost.com/"
+                style="color: var(--seafoam); text-decoration: underline"
+                >ARZ Host</a
+              >
+              for their China web hosting needs. Our team is ready to help you
+              succeed online.
+            </p>
+
+            <div class="contact-details">
+              <div>
+                <h3>Website</h3>
+                <a href="https://arzhost.com/">arzhost.com</a>
+              </div>
+              <div>
+                <h3>Phone</h3>
+                <a href="tel:+16315948060">+1 (631) 594-8060</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-cta">
+            <h3>Get Expert Consultation</h3>
+            <p>
+              Not sure which plan is right for you? Our hosting experts are here
+              to help you choose the perfect solution for your business needs.
+            </p>
+            <a href="https://www.arzhost.com/contact-us/" class="cta-btn"
+              >Contact Our Experts</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-section">
+            <h3>ARZ Host</h3>
+            <p>
+              Premium China web hosting solutions for businesses of all sizes.
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h4>Company</h4>
+            <ul class="footer-links">
+              <li><a href="https://www.arzhost.com/about-us/">About Us</a></li>
+              <li>
+                <a href="https://www.arzhost.com/contact-us/">Contact Us</a>
+              </li>
+              <li><a href="https://arzhost.com/">Our Services</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Legal</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="https://www.arzhost.com/terms-conditions/"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li>
+                <a href="https://www.arzhost.com/privacy-policy/"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="https://www.arzhost.com/disclaimer/">Disclaimer</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Hosting Services</h4>
+            <ul class="footer-links">
+              <li>
+                <a
+                  href="https://arzhost.com/hosting/china-based-web-server-hosting/"
+                  >China Web Hosting</a
+                >
+              </li>
+              <li><a href="https://arzhost.com/">Hong Kong Hosting</a></li>
+              <li><a href="https://arzhost.com/">Virtual Servers</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 ARZ Host. All rights reserved. Professional China web
+            hosting solutions.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      let openFaq = null;
+
+      function toggleFaq(index) {
+        const answer = document.getElementById(`answer-${index}`);
+        const icon = document.getElementById(`icon-${index}`);
+
+        // Close previously open FAQ
+        if (openFaq !== null && openFaq !== index) {
+          document.getElementById(`answer-${openFaq}`).classList.remove("open");
+          document
+            .getElementById(`icon-${openFaq}`)
+            .classList.remove("rotated");
+          document.getElementById(`icon-${openFaq}`).textContent = "▼";
+        }
+
+        // Toggle current FAQ
+        if (openFaq === index) {
+          answer.classList.remove("open");
+          icon.classList.remove("rotated");
+          icon.textContent = "▼";
+          openFaq = null;
+        } else {
+          answer.classList.add("open");
+          icon.classList.add("rotated");
+          icon.textContent = "▲";
+          openFaq = index;
+        }
+      }
+    </script>
   </body>
 </html>
